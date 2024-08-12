@@ -1,0 +1,105 @@
+/* index.css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parentflex {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.leftchild {
+  display: flex;
+  width: 70%;
+  /* background-color: rgb(226, 12, 115); */
+  flex-direction: column;
+}
+
+#heading {
+  margin-top: 70px;
+  margin-left: 100px;
+}
+
+#image {
+  animation: moveUpDown 4s infinite alternate; /* Apply animation */
+  margin-top: 150px;
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 10vh;
+    /* Adjust the value based on the image height */
+  }
+}
+
+.rightchild {
+  display: flex;
+  width: 30%;
+  /* background-color: rgb(222, 99, 160); */
+}
+
+.leftchild1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.textdiv {
+  margin-left: 50px;
+  margin-top: 200px;
+}
+
+.imgdiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  margin-top: 90px;
+}
+
+.imgdiv img {
+  margin-bottom: 20px;
+  border-radius: 30%;
+}
+
+.parentnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color:beige;
+}
+
+.leftnav h2,
+.rightnav h2 {
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.leftnav h2 {
+  margin-left: 50px;
+}
+
+.rightnav h2 {
+  padding: 10px;
+}
+
+.leftnav {
+  display: flex;
+  width: 70%;
+}
+
+.rightnav {
+  display: flex;
+  width: 30%;
+}
+
+.navitem {
+  border: 1px solid #110909; /* Border around each nav item */
+  border-radius: 10px;
+  padding: 5px 10px; /* Padding inside each nav item */
+  margin: 0 5px; /* Margin between each nav item */
+  background: #cfc8c8;
+}
